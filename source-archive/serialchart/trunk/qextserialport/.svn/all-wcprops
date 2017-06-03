@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/4/trunk/qextserialport
+END
+qextserialport.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/4/trunk/qextserialport/qextserialport.h
+END
+qextserialbase.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/4/trunk/qextserialport/qextserialbase.cpp
+END
+posix_qextserialport.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/4/trunk/qextserialport/posix_qextserialport.h
+END
+qextserialport.pro.user
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/4/trunk/qextserialport/qextserialport.pro.user
+END
+qextserialbase.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/4/trunk/qextserialport/qextserialbase.h
+END
+Doxyfile
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/4/trunk/qextserialport/Doxyfile
+END
+win_qextserialport.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/4/trunk/qextserialport/win_qextserialport.cpp
+END
+qextserialenumerator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/4/trunk/qextserialport/qextserialenumerator.cpp
+END
+qextserialport.pro
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/4/trunk/qextserialport/qextserialport.pro
+END
+qextserialport.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/4/trunk/qextserialport/qextserialport.cpp
+END
+CHANGES
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/4/trunk/qextserialport/CHANGES
+END
+posix_qextserialport.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/4/trunk/qextserialport/posix_qextserialport.cpp
+END
+win_qextserialport.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/4/trunk/qextserialport/win_qextserialport.h
+END
+qextserialenumerator.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/4/trunk/qextserialport/qextserialenumerator.h
+END

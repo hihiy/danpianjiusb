@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 22
+/svn/!svn/ver/29/trunk
+END
+common.h
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/19/trunk/common.h
+END
+decoderbin.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/28/trunk/decoderbin.cpp
+END
+displaybase.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/18/trunk/displaybase.cpp
+END
+decoderhdlc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/29/trunk/decoderhdlc.cpp
+END
+decoderbase.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/29/trunk/decoderbase.cpp
+END
+chart.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/19/trunk/chart.cpp
+END
+decoderbin.h
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/28/trunk/decoderbin.h
+END
+displaybase.h
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/18/trunk/displaybase.h
+END
+decoderbase.h
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/18/trunk/decoderbase.h
+END
+decoderhdlc.h
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/29/trunk/decoderhdlc.h
+END
+chart.h
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/19/trunk/chart.h
+END
+mainwindow.ui
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/19/trunk/mainwindow.ui
+END
+configuration.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/19/trunk/configuration.cpp
+END
+porthid.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/29/trunk/porthid.cpp
+END
+mainwindow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/20/trunk/mainwindow.cpp
+END
+configuration.h
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/19/trunk/configuration.h
+END
+resources.qrc
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/7/trunk/resources.qrc
+END
+porthid.h
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/29/trunk/porthid.h
+END
+SerialChart.pro
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/29/trunk/SerialChart.pro
+END
+portbase.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/20/trunk/portbase.cpp
+END
+portrs232.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/20/trunk/portrs232.cpp
+END
+decodercsv.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/18/trunk/decodercsv.cpp
+END
+mainwindow.h
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/20/trunk/mainwindow.h
+END
+hiddevice.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/29/trunk/hiddevice.cpp
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/19/trunk/main.cpp
+END
+portbase.h
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/20/trunk/portbase.h
+END
+notes.txt
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/18/trunk/notes.txt
+END
+portrs232.h
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/20/trunk/portrs232.h
+END
+decodercsv.h
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/18/trunk/decodercsv.h
+END
+hiddevice.h
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/19/trunk/hiddevice.h
+END

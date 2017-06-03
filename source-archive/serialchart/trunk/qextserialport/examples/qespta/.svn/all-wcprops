@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/3/trunk/qextserialport/examples/qespta
+END
+Makefile.Release
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/3/trunk/qextserialport/examples/qespta/Makefile.Release
+END
+QESPTA.pro
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/3/trunk/qextserialport/examples/qespta/QESPTA.pro
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/3/trunk/qextserialport/examples/qespta/README
+END
+MessageWindow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/3/trunk/qextserialport/examples/qespta/MessageWindow.cpp
+END
+MainWindow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/3/trunk/qextserialport/examples/qespta/MainWindow.cpp
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/3/trunk/qextserialport/examples/qespta/Makefile
+END
+QespTest.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/3/trunk/qextserialport/examples/qespta/QespTest.h
+END
+MessageWindow.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/3/trunk/qextserialport/examples/qespta/MessageWindow.h
+END
+Makefile.Debug
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/3/trunk/qextserialport/examples/qespta/Makefile.Debug
+END
+MainWindow.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/3/trunk/qextserialport/examples/qespta/MainWindow.h
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/3/trunk/qextserialport/examples/qespta/main.cpp
+END
+defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/3/trunk/qextserialport/examples/qespta/defs.h
+END
+QespTest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/3/trunk/qextserialport/examples/qespta/QespTest.cpp
+END

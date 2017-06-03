@@ -1,0 +1,6 @@
+*.pyc
+/src/setting.ini
+
+# Package Files #
+/src/build
+/src/dist
