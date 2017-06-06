@@ -11,11 +11,11 @@ import serial
 import binascii
 
 ser = serial.Serial('com6',3000000)
-collecttime = 20000
+collecttime = 40000
 n_channel = 10
 bin_ori = ''
 # PLOT_DEFINE = [[u"sin1f",u"cos1f"],[u"sin3f",u"cos3f"],[u"sin合成",u"cos合成"]]
-PLOT_DEFINE = [[u"signal_0"],[u"signal_1"]]#,[u"signal_2"]]
+PLOT_DEFINE = [[u"signal_1"],[u"signal_4"],[u"signal_9"]]#]
 COLORS = ["blue", "red"]
 DT = 0.001
 
@@ -74,7 +74,7 @@ class RealtimeDemo(QWidget):
         self.manager.get_default_tool().activate()
         self.manager.synchronize_axis(CurvePlot.X_BOTTOM, self.manager.plots.keys())
         self.setLayout(vbox)
-        self.startTimer(1000)
+        self.startTimer(100)
 
     def setup_toolbar(self):
         toolbar = QToolBar()
@@ -98,14 +98,16 @@ class RealtimeDemo(QWidget):
         for i in range(n_channel):
             # writecache.append([])
             drawcache.append([])
-        # for i in range(collecttime):
-        n = ser.inWaiting()
-        ori = ser.read(n)
-        bin_ori += str(binascii.b2a_hex(ori))[2:-1]
+        for i in range(collecttime):
+            n = ser.inWaiting()
+            # print(n)
+            ori = ser.read(n)
+            bin_ori += str(binascii.b2a_hex(ori))[2:-1]
 
         ffff_list = bin_ori.split('fffffffe')
         bin_ori = ffff_list[-1]
         wrong_no = 0
+        # print(len(ffff_list))
         for i in range(1, len(ffff_list)):
             if len(ffff_list[i]) != 4 * n_channel:
                 # print(i)
@@ -126,16 +128,16 @@ class RealtimeDemo(QWidget):
             self.data[u"t"].append(t)
             # for j in xrange(n_channel):
             #     self.data[u"signal_"+str(j)].append(drawcache[j][i])
-            self.data[u"signal_0"].append(drawcache[0][i])
+            # self.data[u"signal_0"].append(drawcache[0][i])
             self.data[u"signal_1"].append(drawcache[1][i])
             # self.data[u"signal_2"].append(drawcache[2][i])
             # self.data[u"signal_3"].append(drawcache[3][i])
-            # self.data[u"signal_4"].append(drawcache[4][i])
+            self.data[u"signal_4"].append(drawcache[4][i])
             # self.data[u"signal_5"].append(drawcache[5][i])
             # self.data[u"signal_6"].append(drawcache[6][i])
             # self.data[u"signal_7"].append(drawcache[7][i])
             # self.data[u"signal_8"].append(drawcache[8][i])
-            # self.data[u"signal_9"].append(drawcache[9][i])
+            self.data[u"signal_9"].append(drawcache[9][i])
             self.t += DT
 
         # for i in xrange(100):
