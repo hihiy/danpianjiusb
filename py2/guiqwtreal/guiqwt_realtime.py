@@ -10,7 +10,7 @@ from guiqwt.builder import make
 import serial
 import binascii
 
-ser = serial.Serial('com6',3000000)
+ser = serial.Serial('com3',4500000)
 collecttime = 40000
 n_channel = 10
 bin_ori = ''
