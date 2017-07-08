@@ -10,12 +10,16 @@ from guiqwt.builder import make
 import serial
 import binascii
 
+<<<<<<< HEAD
+ser = serial.Serial('com6',4500000)
+=======
 ser = serial.Serial('com3',4500000)
+>>>>>>> 28c4b131e6ab87389d15430f79e8ce5db6d038ef
 collecttime = 40000
 n_channel = 10
 bin_ori = ''
 # PLOT_DEFINE = [[u"sin1f",u"cos1f"],[u"sin3f",u"cos3f"],[u"sin合成",u"cos合成"]]
-PLOT_DEFINE = [[u"signal_1"],[u"signal_4"],[u"signal_9"]]#]
+PLOT_DEFINE = [[u"signal_1"],[u"signal_4"],[u"signal_7"]]#]
 COLORS = ["blue", "red"]
 DT = 0.001
 
@@ -95,6 +99,8 @@ class RealtimeDemo(QWidget):
         global bin_ori
         # writecache = []
         drawcache = []
+        MAXRANGE = 65535
+        AMPL = 6
         for i in range(n_channel):
             # writecache.append([])
             drawcache.append([])
@@ -118,7 +124,7 @@ class RealtimeDemo(QWidget):
 
             for j in range(n_channel):
                 temp = int(ffff_list[i][4 * j:4 * (j + 1)], 16)
-                drawcache[j].append(temp)
+                drawcache[j].append((temp))# - MAXRANGE / 2) / (MAXRANGE / 2) * AMPL)
                 # writecache[j].append(str(temp))
 
         # print(wrong_no)
@@ -135,9 +141,9 @@ class RealtimeDemo(QWidget):
             self.data[u"signal_4"].append(drawcache[4][i])
             # self.data[u"signal_5"].append(drawcache[5][i])
             # self.data[u"signal_6"].append(drawcache[6][i])
-            # self.data[u"signal_7"].append(drawcache[7][i])
+            self.data[u"signal_7"].append(drawcache[7][i])
             # self.data[u"signal_8"].append(drawcache[8][i])
-            self.data[u"signal_9"].append(drawcache[9][i])
+            # self.data[u"signal_9"].append(drawcache[9][i])
             self.t += DT
 
         # for i in xrange(100):
@@ -179,6 +185,10 @@ def main():
     form.show()
     sys.exit(app.exec_())
 
+
+
 if __name__ == '__main__':
     main()
+
+
 
