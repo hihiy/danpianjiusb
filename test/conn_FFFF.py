@@ -9,7 +9,7 @@ import time
 
 write_name = 'test.csv'
 ser = serial.Serial('com3',4500000)
-collecttime = 20000
+collecttime = 2000
 n_channel = 10
 two = []
 MAXRANGE = 65535
