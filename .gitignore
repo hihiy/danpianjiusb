@@ -4,3 +4,6 @@
 # Package Files #
 /src/build
 /src/dist
+
+test/.idea/
+PYQT/.idea/
