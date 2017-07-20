@@ -17,7 +17,7 @@ ADDR = ( HOST, PORT )    #地址
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 
-collecttime = 10
+collecttime = 20
 n_channel = 16
 two = []
 MAXRANGE = 65535
@@ -43,18 +43,18 @@ for i in range(collecttime):
     #     nnn.append(n)
     ori,addr = sock.recvfrom(BUFFSIZE)
     # print(3)
-    print(ori)
+    # print(ori)
     # orid=ori.decode(encoding='byte')
     # print(orid)
     bin_ori += str(binascii.b2a_hex(ori))[2:-1]
     # print(ori)
-print(bin_ori)
+# print(bin_ori)
 
 # bin_ori += str(binascii.b2a_hex(ori))[2:-1]
 # print(ccc)
 # print(nnn)
 # print(len(bin_ori))
-ffff_list = bin_ori.split('ffff00fffe')
+ffff_list = bin_ori.split('ffff00ffff')
 # print(ffff_list)
 
 
@@ -66,15 +66,21 @@ for i in range(1,len(ffff_list)):
         wrong_no +=1
         print(ffff_list[i])
         continue
-
+    # print(ffff_list[i])
     for k in range(SAMPLEPERBLOCK):
         Sample_temp = ffff_list[i][4 * n_channel * k : 4 * n_channel * ( k + 1 )]
+        # print(len(Sample_temp))
+        count4500 = 0
         for j in range(n_channel):
             channel_temp = Sample_temp[4*j:4*(j+1)]
-            temp = int(channel_temp[0:2]+channel_temp[2:4],16)
+            temp = int(channel_temp[2:4]+channel_temp[0:2],16)
+            if temp > 45000 and j == 2:
+                count4500 += 1
+                print(channel_temp[2:4]+channel_temp[0:2])
             drawcache[j].append((temp - MAXRANGE / 2) / (MAXRANGE / 2) * AMPL)
             writecache[j].append(str(temp))
-
+        print('iter'+str(i))
+        print(count4500)
 print(wrong_no)
 print(wrong_no/len(ffff_list))
 fig = plt.figure()
