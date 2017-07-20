@@ -39,7 +39,8 @@ print(2)
 for i in range(collecttime):
 
     # if n !=0:
-    #     ccc.append(i)
+    #     ccc.append(20
+
     #     nnn.append(n)
     ori,addr = sock.recvfrom(BUFFSIZE)
     # print(3)
